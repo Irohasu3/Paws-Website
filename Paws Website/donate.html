@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Donate - PAWS</title>
+  <meta name="description" content="Support PAWS with a donation. Your contribution helps us rescue and care for dogs in need.">
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Donate - PAWS">
+  <meta property="og:description" content="Help us make a difference in the lives of abandoned and neglected dogs through your generous donation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paws-adoption.org/donate">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+      <div class="mobile-auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="donate-section">
+      <div class="container">
+        <h1 class="page-title">Support Our Cause</h1>
+        
+        <div class="donate-grid">
+          <!-- Featured Dogs for Sponsorship -->
+          <div class="sponsorship-container">
+            <h2>Sponsor a Dog</h2>
+            <div class="sponsorship-grid">
+              <div class="sponsor-dog mila">
+                <img src="https://images.unsplash.com/photo-1583511655826-05700442982d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" alt="Mila - Dog available for sponsorship">
+                <div class="dog-name-tag">Mila</div>
+              </div>
+              
+              <div class="sponsor-dog cubby">
+                <img src="https://images.unsplash.com/photo-1536809188428-e8ecf663d0be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" alt="Cubby - Dog available for sponsorship">
+                <div class="dog-name-tag">Cubby</div>
+              </div>
+              
+              <div class="sponsor-dog star">
+                <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=500" alt="Star - Dog available for sponsorship">
+                <div class="dog-name-tag">Star</div>
+              </div>
+              
+              <div class="sponsor-dog clay">
+                <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=500" alt="Clay - Dog available for sponsorship">
+                <div class="dog-name-tag">Clay</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Donation Form -->
+          <div class="donation-form-container">
+            <h2>Donation</h2>
+            <p>
+              Help us help more animals. The shelter and all our programs and campaigns are funded solely by donations. 
+              You can donate any amount via bank deposit or online.
+            </p>
+            
+            <form id="donation-form" class="form">
+              <div class="form-group">
+                <label for="donor-name">Name</label>
+                <input type="text" id="donor-name" name="name" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donor-lastName">Last Name</label>
+                <input type="text" id="donor-lastName" name="lastName" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donor-email">Email</label>
+                <input type="email" id="donor-email" name="email" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="donor-phone">Mobile Number</label>
+                <input type="tel" id="donor-phone" name="phone" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <label for="donation-for">Donation For</label>
+                <select id="donation-for" name="donationFor" class="form-control" required>
+                  <option value="">Select purpose</option>
+                  <option value="general">General Funds</option>
+                  <option value="medical">Medical Care</option>
+                  <option value="food">Food & Supplies</option>
+                  <option value="shelter">Shelter Maintenance</option>
+                  <option value="specific-dog">Specific Dog</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" class="form-control" min="1" required>
+              </div>
+              
+              <button type="submit" class="btn-primary btn-full">Submit</button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- In-Kind Donations -->
+        <div class="in-kind-section">
+          <h2 class="section-title">DONATE IN KIND</h2>
+          
+          <div class="in-kind-grid">
+            <div class="in-kind-image">
+              <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500" alt="Dogs at shelter">
+            </div>
+            
+            <div class="wish-list dog-wish-list">
+              <h3>DOGS WISH LIST</h3>
+              <ul>
+                <li>Dog food (kibble and canned)</li>
+                <li>Crates, carriers or cages</li>
+                <li>Pee pads</li>
+                <li>Vaccines, medicine and vitamins</li>
+                <li>Dog treats</li>
+                <li>Leashes, harnesses and collars</li>
+              </ul>
+            </div>
+            
+            <div class="wish-list shelter-wish-list">
+              <h3>SHELTER WISH LIST</h3>
+              <ul>
+                <li>Detergent powder and bleach</li>
+                <li>Dishwashing paste or liquid</li>
+                <li>Bath towels</li>
+                <li>Garbage bags (XXL)</li>
+                <li>Foot rugs or door mats</li>
+                <li>Clinic supplies (alcohol, cotton, etc.)</li>
+                <li>Old newspapers</li>
+                <li>Toilet paper</li>
+                <li>Mops and brooms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="nonprofit-note">
+          <p>
+            PAWS is a registered non-profit organization which is dedicated to the protection and the promotion of humane treatment of all animals.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">Logo</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          &copy; <span id="current-year"></span> PAWS. All rights reserved. PAWS is a registered non-profit organization dedicated to the protection and promotion of humane treatment of all animals.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

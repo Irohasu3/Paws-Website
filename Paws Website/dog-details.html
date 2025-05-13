@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Dog Details - PAWS</title>
+  <meta name="description" content="Learn more about our adoptable dogs and the adoption process at PAWS.">
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Dog Details - PAWS">
+  <meta property="og:description" content="Meet our adorable, adoptable dogs looking for their forever homes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paws-adoption.org/dog-details">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+      <div class="mobile-auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="dog-details-section">
+      <div class="container">
+        <div class="dog-details-grid">
+          <!-- Dog Information -->
+          <div class="dog-info-container">
+            <h1 id="dog-name">Pumi</h1>
+            
+            <div class="dog-image-container">
+              <img id="dog-image" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" alt="Pumi - Happy dog portrait">
+            </div>
+            
+            <div class="dog-details-card">
+              <h2>About <span id="dog-name-about">Pumi</span></h2>
+              <div class="dog-attributes">
+                <div class="dog-attribute">
+                  <p class="attribute-label">Age:</p>
+                  <p id="dog-age">2 years</p>
+                </div>
+                <div class="dog-attribute">
+                  <p class="attribute-label">Gender:</p>
+                  <p id="dog-gender">Male</p>
+                </div>
+                <div class="dog-attribute">
+                  <p class="attribute-label">Size:</p>
+                  <p id="dog-size">Medium</p>
+                </div>
+                <div class="dog-attribute">
+                  <p class="attribute-label">Weight:</p>
+                  <p id="dog-weight">15 kg</p>
+                </div>
+                <div class="dog-attribute">
+                  <p class="attribute-label">Breed:</p>
+                  <p id="dog-breed">Mixed</p>
+                </div>
+                <div class="dog-attribute">
+                  <p class="attribute-label">Color:</p>
+                  <p id="dog-color">Brown/Black</p>
+                </div>
+              </div>
+              
+              <div class="dog-personality">
+                <h3>Personality</h3>
+                <p id="dog-personality-text">Pumi is a sweet, energetic, and friendly dog who loves people and other animals. He's the perfect combination of playful and affectionate. He enjoys going for walks, playing fetch, and cuddling on the couch.</p>
+              </div>
+              
+              <div class="dog-background">
+                <h3>Background</h3>
+                <p id="dog-background-text">Pumi was found as a stray wandering the streets. Despite his rough start, he's now healthy, happy, and ready for his forever home. He's been neutered, vaccinated, and microchipped.</p>
+              </div>
+            </div>
+            
+            <div class="text-center mt-6">
+              <a href="#adoption-form" class="btn-primary">Adopt <span id="dog-name-btn">Pumi</span></a>
+            </div>
+          </div>
+          
+          <!-- Adoption Form -->
+          <div id="adoption-form" class="adoption-form-container">
+            <h2>How can we contact you</h2>
+            
+            <div class="form-container">
+              <form id="adoption-form-element" class="form">
+                <input type="hidden" id="dog-id-input" name="dogId" value="pumi">
+                
+                <div class="form-group">
+                  <label for="adopter-name">Name</label>
+                  <input type="text" id="adopter-name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="adopter-lastName">Last Name</label>
+                  <input type="text" id="adopter-lastName" name="lastName" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="adopter-email">Email</label>
+                  <input type="email" id="adopter-email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="adopter-phone">Mobile Number</label>
+                  <input type="tel" id="adopter-phone" name="phone" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="adopter-message">Message</label>
+                  <textarea id="adopter-message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary btn-full">Adopt</button>
+              </form>
+            </div>
+            
+            <div class="location-info">
+              <h2>Where you can find us</h2>
+              <p>Our Office</p>
+              <div class="map-container">
+                <img src="https://images.unsplash.com/photo-1577086664693-894d8405334a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Map showing PAWS office location">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">Logo</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          &copy; <span id="current-year"></span> PAWS. All rights reserved. PAWS is a registered non-profit organization dedicated to the protection and promotion of humane treatment of all animals.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

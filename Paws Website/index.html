@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>PAWS - Pet Adoption & Welfare Society</title>
+  <meta name="description" content="PAWS helps connect loving homes with dogs in need. We rescue, rehabilitate, and rehome abandoned and neglected dogs.">
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="PAWS - Pet Adoption & Welfare Society">
+  <meta property="og:description" content="Find your forever friend at PAWS. We rescue, rehabilitate, and rehome abandoned and neglected dogs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paws-adoption.org">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+      <div class="mobile-auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1615751072497-5f5169febe17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800" alt="Happy rescue dog">
+        </div>
+        <div class="hero-content">
+          <h1>Find Your Forever Friend</h1>
+          <p>
+            PAWS helps connect loving homes with dogs in need. We rescue, rehabilitate, and rehome abandoned and neglected dogs.
+          </p>
+          <div class="hero-buttons">
+            <a href="#featured-dogs" class="btn-primary">Featured Dogs</a>
+            <a href="#rescue-stories" class="btn-primary">Rescue Stories</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Dogs Section -->
+    <section id="featured-dogs" class="featured-dogs-section">
+      <div class="container">
+        <h2 class="section-title">Featured Dogs</h2>
+        
+        <div class="dogs-grid">
+          <div class="dog-card">
+            <a href="dog-details.html?id=pumi" class="dog-image-link">
+              <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" alt="Pumi - Adoptable dog">
+              <div class="dog-name-tag">Pumi</div>
+            </a>
+            <div class="dog-info">
+              <h3>Pumi</h3>
+              <p>Pumi, the sweetest dog with a happy outlook on life. Super friendly!</p>
+              <a href="dog-details.html?id=pumi" class="btn-primary">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dog-card">
+            <a href="dog-details.html?id=banjo" class="dog-image-link">
+              <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" alt="Banjo - Adoptable dog">
+              <div class="dog-name-tag">Banjo</div>
+            </a>
+            <div class="dog-info">
+              <h3>Banjo</h3>
+              <p>Loves to nap in the sun - has a bright, soft energy. Never met a human he didn't like.</p>
+              <a href="dog-details.html?id=banjo" class="btn-primary">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dog-card">
+            <a href="dog-details.html?id=post" class="dog-image-link">
+              <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600" alt="Post - Adoptable dog">
+              <div class="dog-name-tag">Post</div>
+            </a>
+            <div class="dog-info">
+              <h3>Post</h3>
+              <p>Post was abandoned in January. He feels relaxed around other dogs and loves humans.</p>
+              <a href="dog-details.html?id=post" class="btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-action">
+          <a href="donate.html" class="btn-primary">See More Dogs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rescue Stories Section -->
+    <section id="rescue-stories" class="rescue-stories-section">
+      <div class="container">
+        <h2 class="section-title">Rescue Stories</h2>
+        
+        <div class="stories-grid">
+          <div class="story-card">
+            <div class="story-image">
+              <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Max's Journey to Happiness">
+            </div>
+            <div class="story-content">
+              <h3>Max's Journey to Happiness</h3>
+              <p>
+                Max was found wandering the streets, injured and malnourished. He had scars that told a story of abuse. Our team rescued him, provided medical care, and gave him a safe place. After weeks of recovery, his real personality emerged. Now, Max lives with his new loving family, showing that every dog deserves a second chance.
+              </p>
+              <a href="#" class="story-link">Read Full Story →</a>
+            </div>
+          </div>
+          
+          <div class="story-card">
+            <div class="story-image">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Bella's Second Chance">
+            </div>
+            <div class="story-content">
+              <h3>Bella's Second Chance</h3>
+              <p>
+                Bella was abandoned in an old, empty lot with no food and water. When rescued, she was terrified and malnourished. Through patient care, Bella regained her strength. After careful socialization, she now loves to play with the gentlest soul. Today, she's a cherished family companion, loved by all.
+              </p>
+              <a href="#" class="story-link">Read Full Story →</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-action">
+          <a href="about.html" class="btn-primary">More Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="container text-center">
+        <h2>Help Us Make a Difference</h2>
+        <p>
+          Your support helps us rescue, rehabilitate, and rehome dogs in need. Every donation, big or small, makes a real difference in a dog's life.
+        </p>
+        <div class="cta-buttons">
+          <a href="donate.html" class="btn-primary">Donate Now</a>
+          <a href="contact.html" class="btn-outline-alt">Volunteer</a>
+          <a href="contact.html" class="btn-outline-alt">Foster a Dog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">Logo</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          &copy; <span id="current-year"></span> PAWS. All rights reserved. PAWS is a registered non-profit organization dedicated to the protection and promotion of humane treatment of all animals.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

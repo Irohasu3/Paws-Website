@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Contact Us - PAWS</title>
+  <meta name="description" content="Get in touch with PAWS for inquiries about adoption, volunteering, or other ways to help.">
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Contact Us - PAWS">
+  <meta property="og:description" content="Reach out to our team for inquiries about adoption, fostering, volunteering, or donations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paws-adoption.org/contact">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+      <div class="mobile-auth-buttons">
+        <button class="btn-outline">LOGIN</button>
+        <button class="btn-primary">SIGN UP</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" class="form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <label>Select your MAIN concern</label>
+                <div class="radio-grid">
+                  <div class="radio-option">
+                    <input type="radio" id="spay-neuter" name="concern" value="spay-neuter">
+                    <label for="spay-neuter">Spay / Neuter (Kapon)</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="tnr" name="concern" value="tnr">
+                    <label for="tnr">TNR (Trap-Neuter-Return)</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="rescue-wildlife" name="concern" value="rescue-wildlife">
+                    <label for="rescue-wildlife">Rescue / Wildlife</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="cruelty-neglect" name="concern" value="cruelty-neglect">
+                    <label for="cruelty-neglect">Cruelty / Neglect</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="clinic-vet" name="concern" value="clinic-vet">
+                    <label for="clinic-vet">Clinic / Vet</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="adopt-foster" name="concern" value="adopt-foster">
+                    <label for="adopt-foster">Adopt / Foster</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="donation-inquiry" name="concern" value="donation-inquiry">
+                    <label for="donation-inquiry">Donation Inquiry</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="volunteer-inquiry" name="concern" value="volunteer-inquiry">
+                    <label for="volunteer-inquiry">Volunteer Inquiry</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="disaster-relief" name="concern" value="disaster-relief">
+                    <label for="disaster-relief">Disaster Relief</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="humane-education" name="concern" value="humane-education">
+                    <label for="humane-education">Humane Education (Seminars / Lectures)</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="thesis" name="concern" value="thesis">
+                    <label for="thesis">Thesis, OJT & Other Student Inquiries</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="partnership" name="concern" value="partnership">
+                    <label for="partnership">Partnership, CSR & Other Company Inquiries</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="dr-dog" name="concern" value="dr-dog">
+                    <label for="dr-dog">Dr. Dog / LEAD</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="better-chicken" name="concern" value="better-chicken">
+                    <label for="better-chicken">The Better Chicken Option</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="pet-friendly" name="concern" value="pet-friendly">
+                    <label for="pet-friendly">Recommend a Pet-Friendly Establishment</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn-primary">Submit</button>
+            </form>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Our Social Media</h2>
+            <div class="social-media-links">
+              <a href="https://facebook.com/PawsOfficial" target="_blank" rel="noopener noreferrer" class="social-link">
+                <div class="social-icon facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <span>PawsOfficial</span>
+              </a>
+              
+              <a href="https://instagram.com/Paws.IG" target="_blank" rel="noopener noreferrer" class="social-link">
+                <div class="social-icon instagram">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <span>Paws.IG</span>
+              </a>
+              
+              <a href="https://youtube.com/DailyPaws" target="_blank" rel="noopener noreferrer" class="social-link">
+                <div class="social-icon youtube">
+                  <i class="fab fa-youtube"></i>
+                </div>
+                <span>DailyPaws</span>
+              </a>
+            </div>
+            
+            <h2>Where you can find us</h2>
+            <p>Our Office</p>
+            <div class="map-container">
+              <img src="https://images.unsplash.com/photo-1577086664693-894d8405334a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Map showing PAWS office location">
+            </div>
+          </div>
+        </div>
+        
+        <div class="nonprofit-note">
+          <p>
+            PAWS is a registered non-profit organization which is dedicated to the protection and the promotion of humane treatment of all animals.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">Logo</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          &copy; <span id="current-year"></span> PAWS. All rights reserved. PAWS is a registered non-profit organization dedicated to the protection and promotion of humane treatment of all animals.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
